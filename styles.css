@@ -1,0 +1,71 @@
+body {
+    background-image: url(img/fondo.jpg); /* Cambia esta URL */
+    background-size: cover; /* La imagen cubrirá todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No permite que la imagen se repita */
+    height: 100vh; /* Altura del body al 100% de la ventana */
+    margin: 0; /* Sin márgenes */
+    font-family: Arial, sans-serif;
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    /*padding: 20px;  Ajusta el padding según sea necesario */
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: rgb(42 41 65 / 71%); /* Fondo blanco semitransparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+#result img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input, button {
+        font-size: 1em;
+    }
+}
